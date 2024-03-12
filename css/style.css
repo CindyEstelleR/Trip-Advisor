@@ -1,0 +1,17 @@
+body {
+  font-family: TS-Reg, sans-serif;
+}
+
+header {
+  background-color: white;
+  border: red solid 1px;
+}
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 180px;
+}
