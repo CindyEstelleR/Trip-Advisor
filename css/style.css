@@ -9,6 +9,7 @@ header {
   height: 70px;
   background-color: white;
   /* border: red solid 1px; */
+  position: sticky;
   display: flex;
   align-items: center;
   margin-bottom: 35px;
@@ -29,7 +30,7 @@ header img {
 }
 
 .nav1 {
-  border: rgb(255, 255, 255) solid 1px;
+  /* border: black solid 1px; */
   display: flex;
   gap: 10px;
   /* margin-left: 20px; */
@@ -37,6 +38,7 @@ header img {
 }
 
 .nav1 a {
+  /* border: black solid 1px; */
   /* border: black solid 1px; */
   margin-left: 20px;
 }
@@ -135,9 +137,11 @@ p {
   height: 50%;
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .location {
+  /* border: red solid 1px; */
   display: flex;
   font-size: 12px;
   gap: 10px;
@@ -148,6 +152,7 @@ p {
   display: flex;
   margin-top: 60px;
   height: 470px;
+  margin-bottom: 50px;
 }
 
 .blocleft {
@@ -163,22 +168,34 @@ p {
   border-radius: 20px;
   background-color: #fe5d5d;
   margin-left: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bloctop {
   /* border: steelblue solid 1px; */
   background-color: #fe5d5d;
+  height: 55%;
   border-radius: 20px;
   padding: 30px;
 }
 
 .blocbottom {
-  border: black solid 1px;
-  height: 190px;
+  /* border: black solid 1px; */
+  height: 45%;
   background-color: #faf1ed;
   justify-content: flex-end;
 }
+.blocbottom img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
+.blocleft h2 {
+  font-weight: bold;
+}
 h2 {
   font-size: 25px;
   font-weight: bold;
@@ -187,7 +204,82 @@ h2 {
 .description {
   font-size: large;
 }
+
+h3 {
+  font-size: 25px;
+  color: black;
+}
+
+.bloctop h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.bloctop button {
+  background: #333333;
+  width: 150px;
+}
+.third-section {
+  border: pink solid 1px;
+  margin-bottom: 100px;
+}
+
+.third-section-main {
+  border: pink solid 1px;
+  display: flex;
+}
+
+.third-desc {
+  border: blue solid 1px;
+  padding: 10px;
+  flex: 1;
+}
+
+.third-caroussel {
+  border: yellow solid 1px;
+  flex: 3;
+  display: flex;
+  gap: 12px;
+  overflow-x: scroll;
+}
+
+.third-caroussel div {
+  width: calc((100% -36px) / 3);
+  border: green solid 1px;
+  flex-shrink: 0;
+}
+
+.third-caroussel > div img {
+  width: 100%;
+}
+.relativ-div {
+  position: relative;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.background-div {
+  height: 150px;
+  background-image: url("../imgs/toulouse2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+h4 {
+  padding-top: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
 footer {
   height: 500px;
-  color: #faf1ed;
+  color: #f5f5f5;
 }
