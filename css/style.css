@@ -237,6 +237,7 @@ h3 {
 
 .third-caroussel {
   border: yellow solid 1px;
+
   flex: 3;
   display: flex;
   gap: 12px;
